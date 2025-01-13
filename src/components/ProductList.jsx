@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
+import '../Cards.css'
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
@@ -27,7 +28,7 @@ export default function ProductList() {
 
   return (
     <>
-      <div className="container">
+      <div className="container mb-5">
         <div className="buttons text-center p-5">
           {categories.map((category) => {
             return (
@@ -36,10 +37,10 @@ export default function ProductList() {
           })}
           <button className="btn btn-info me-2" onClick={getProducts}>ALL</button>
         </div>
-        <div className="row justify-content-between">
+        <div className="row cards gap-3">
         {products.map((product) => {
           return (
-            <div className="card mb-3" style={{ width: "24%" }} key={product.id}>
+            <div className="card" style={{ width: "24%" }} key={product.id}>
               <div className="image text-center p-2">
                 <img src={product.image} className="card-img-top" alt={product.title} 
                   style={{height:'150px', width:'100px'}}  
