@@ -1,0 +1,49 @@
+.about-container {
+  max-width: 800px;
+  margin: 100px auto 0;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-container .text {
+  font-size: 17px;
+  color: #777;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 15px;
+  }
+
+  .about-container .title {
+    font-size: 30px;
+  }
+
+  .about-container .text {
+    font-size: 15px;
+  }
+}
+
+.about-container .icons {
+  gap: 15px;
+}
+.about-container .icons li i {
+  font-size: 22px;
+  gap: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #777;
+}
+.about-container .icons li:hover i.bi-facebook {
+  color: #1877f2;
+}
+.about-container .icons li:hover i.bi-instagram {
+  color: #e1306c;
+}
+.about-container .icons li:hover i.bi-linkedin {
+  color: #0a66c2;
+}
