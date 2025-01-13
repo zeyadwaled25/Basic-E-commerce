@@ -1,11 +1,10 @@
 import { Link } from "react-router";
-import '../Navbar.css'
 
 export default function Navbar() {
   return (
     <>
       <div className="container">
-        <nav className="navbar navbar-expand-lg bg-body-tertiary height-60">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ height: '60px'}}>
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
               E-commerce App

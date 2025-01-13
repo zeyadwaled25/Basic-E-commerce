@@ -1,7 +1,6 @@
 import Image1 from '../images/Image1.jpg'
 import Image2 from '../images/Image2.jpg'
 import Image3 from '../images/Image3.jpg'
-import '../Slider.css'
 
 export default function Slider() {
   return (
@@ -9,13 +8,13 @@ export default function Slider() {
       <div id="carouselExampleFade" className="carousel slide carousel-fade">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={Image1} className="d-block w-100 height-full" alt="Loading..." />
+            <img src={Image1} className="d-block w-100" alt="Loading..." style={{ height: "calc(100vh - 60px)" }}/>
           </div>
           <div className="carousel-item">
-            <img src={Image2} className="d-block w-100 height-full" alt="Loading..." />
+            <img src={Image2} className="d-block w-100" alt="Loading..." style={{ height: "calc(100vh - 60px)" }} />
           </div>
           <div className="carousel-item">
-            <img src={Image3} className="d-block w-100 height-full" alt="Loading..." />
+            <img src={Image3} className="d-block w-100" alt="Loading..." style={{ height: "calc(100vh - 60px)" }} />
           </div>
         </div>
         <button
