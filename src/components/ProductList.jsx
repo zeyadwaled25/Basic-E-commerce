@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
-import '../Cards.css'
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
